@@ -5,3 +5,156 @@
     box-sizing: border-box;
     font-family: "Merriweather", serif;
 }
+i{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-size: 24px;
+    color: #333;
+}
+i:hover{
+    color: #050C9C;
+}
+body{
+    background-color: #3ABEF9;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.desc{
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.dictionary-box{
+    width: 95%;
+    max-width: 576px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.813rem;
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    box-shadow: 1px 1px 1px 1px #3572EF;
+}
+
+.input-box{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input{
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-bottom: 0.225rem solid #050C9C;
+}
+
+.input-box i{
+    margin-left: -30px;
+}
+
+.input-box button{
+    outline: none;
+    border: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.413rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #050C9C;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.input-box button:active{
+    transform: scale(0.96);
+}
+.input-box #btn-icon{
+    display: none;
+}
+.input-box button:hover{
+    filter: brightness(1.3);
+}
+
+.output-box{
+    margin: 1rem 0;
+}
+.output-box .output{
+    padding: 0.625rem;
+    position: relative;
+}
+
+.output-box .output i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.output-box .meaning,
+.output-box .example,
+.output-box .synonyms{
+    padding: 0.625rem;
+    background-color: #A7E6FF;
+    margin: 0.625rem 0;
+    border-radius: 0.413rem;
+    border-left: 0.225rem solid #050C9C;
+}
+
+.output-box h4{
+    font-size: 1.05rem;
+    margin-bottom: 0.125rem;
+}
+
+.output-box p{
+    font-size: 0.725rem;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    color: #333;
+}
+
+.pointer-none{
+    pointer-events: none;
+}
+.hide{
+    display: none;
+}
+.error{
+    color: #f00;
+    font-size: 0.813rem;
+}
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 3rem;
+    }
+    
+    .desc{
+        font-size: .85rem;
+    }
+    
+    .input-box input,
+    .input-box button{
+        padding: 0.625rem;
+    }
+    .input-box #btn-text{
+        display: none;
+    }
+
+    .input-box #btn-icon{
+        display: block;
+    }
+}
