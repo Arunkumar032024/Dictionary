@@ -6,3 +6,5 @@ Add initial files
 Add a bueatiful user interface to interact with app.
 <br>
 Add word search functionality
+<br>
+Complete Dictionary App

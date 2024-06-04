@@ -150,7 +150,7 @@ h1{
     .input-box button{
         padding: 0.625rem;
     }
-    .input-box #btn-text{
+    .input-box #btn .text{
         display: none;
     }
 }
