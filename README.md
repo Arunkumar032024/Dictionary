@@ -4,3 +4,5 @@ Welcome to our innovative dictionary app crafted with HTML, CSS, and JavaScript!
 Add initial files
 <br>
 Add a bueatiful user interface to interact with app.
+<br>
+Add word search functionality

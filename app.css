@@ -82,9 +82,6 @@ h1{
 .input-box button:active{
     transform: scale(0.96);
 }
-.input-box #btn-icon{
-    display: none;
-}
 .input-box button:hover{
     filter: brightness(1.3);
 }
@@ -106,7 +103,8 @@ h1{
 
 .output-box .meaning,
 .output-box .example,
-.output-box .synonyms{
+.output-box .synonyms,
+.output-box .antonyms{
     padding: 0.625rem;
     background-color: #A7E6FF;
     margin: 0.625rem 0;
@@ -135,6 +133,8 @@ h1{
 .error{
     color: #f00;
     font-size: 0.813rem;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
 }
 
 @media (max-width: 576px) {
@@ -152,9 +152,5 @@ h1{
     }
     .input-box #btn-text{
         display: none;
-    }
-
-    .input-box #btn-icon{
-        display: block;
     }
 }
